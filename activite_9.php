@@ -6,8 +6,8 @@ $paquet = []; $sousPaquet1 = []; $sousPaquet2 = [];
 $paquetBrasse = [];
 
 for ($i=0; $i <count($cartes) ; $i++) { 
-    for ($j=0; $j <count($nombres) ; $j++) { 
-        $paquet[] =$nombres[$j].$cartes[$i];
+    for ($j=0; $j <count($numero) ; $j++) { 
+        $paquet[] =$numero[$j].$cartes[$i];
     }
 }
 
@@ -23,7 +23,8 @@ for ($i=0; $i <26 ; $i++) {
 for ($i=0; $i <52 ; $i++) { 
     echo $paquetBrasse[$i]."";
     if ( ($i+1) % 13==0) {
-        echo"</br>";
+        echo"<br>";
+        echo"<hr>";
     }
 }
 ?>
